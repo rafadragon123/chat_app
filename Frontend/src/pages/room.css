@@ -1,0 +1,71 @@
+.room{
+    display: flex;
+    height: 99.9vh;
+    width: 100%;
+}
+
+.infoArea{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 33%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#infoText{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.chatArea{
+    height: 100%;
+    /* width: 100%; */
+    flex-grow: 2;
+}
+
+.chatArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.messageGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.messageBox{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.messagesArea{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sendButton{
+    animation: sendButtonTranstionOut 0.5s;
+}
+#sendButton:hover{
+    animation: sendButtonTransitionIn 0.5s;
+    color: #34495e
+}
+
+@keyframes sendButtonTransitionIn {
+    0%  {color: #686de0}
+    100% {color: #34495e}
+}
+
+@keyframes sendButtonTranstionOut {
+    0%  {color: #34495e}
+    100% {color: #686de0}
+}
